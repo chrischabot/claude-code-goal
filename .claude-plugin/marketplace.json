@@ -1,0 +1,23 @@
+{
+  "name": "claude-code-goal",
+  "owner": {
+    "name": "Chris Chabot"
+  },
+  "metadata": {
+    "description": "Persistent, markdown-backed goal mode for Claude Code.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "goal",
+      "description": "Persistent goal mode for Claude Code: namespaced goal commands plus Stop-hook autonomous continuation backed by markdown state.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Chris Chabot"
+      },
+      "source": "./plugins/goal",
+      "category": "development",
+      "homepage": "https://github.com/chrischabot/claude-code-goal"
+    }
+  ]
+}

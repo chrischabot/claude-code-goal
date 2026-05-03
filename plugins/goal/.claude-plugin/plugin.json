@@ -1,0 +1,9 @@
+{
+  "name": "goal",
+  "version": "0.1.0",
+  "description": "Persistent goal mode for Claude Code: namespaced goal commands plus Stop-hook autonomous continuation backed by markdown state.",
+  "author": {
+    "name": "OpenAI Codex"
+  },
+  "license": "MIT"
+}
