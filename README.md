@@ -135,6 +135,11 @@ claude -p --verbose \
 
 Afterwards `marker.txt` should contain `first-pass`, `goal-live.txt` should contain `goal-ok`, and the state file under `.claude/goals/` should show `status: "complete"` with a logged Stop-hook continuation.
 
+## Project background
+
+- [claude-code-goal project overview](https://chabot.dev/projects/#claude-code-goal) on Chris Chabot’s site.
+- [The goal should be a file you can open](https://chabot.dev/blog/agent-goals-should-live-somewhere-inspectable/): the stop hook and file-backed goal ledger.
+
 ## Credits and license
 
 The product direction comes from Codex `/goal`. The `Stop`-hook continuation comes from Anthropic's Ralph Loop plugin, which implements Geoffrey Huntley's Ralph technique and uses the same `--max-iterations` and `--completion-promise` flags and `<promise>` tag. Where Ralph feeds the same prompt back each time, this plugin builds its continuation prompt from tracked state, asks for a completion audit, and adds commands to pause, resume, stop and annotate the goal.
